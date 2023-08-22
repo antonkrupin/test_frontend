@@ -6,9 +6,9 @@ import './ServiceCards.css'
 const ServiceCards = () => {
   return (
     <div className="serviceCards">
-      <ServiceCard title="Онлайнприем" />
-      <ServiceCard title="Онлайнприем" />
-      <ServiceCard title="Онлайнприем" />
+      <ServiceCard type="online" />
+      <ServiceCard type="emergency" />
+      <ServiceCard type="cancer" />
     </div>
   )
 };
