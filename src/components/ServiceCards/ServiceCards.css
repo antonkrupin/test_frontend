@@ -1,0 +1,6 @@
+.serviceCards {
+  display: flex;
+  justify-content: space-between;
+  width: 1046px;
+  margin: auto;
+}
