@@ -15,14 +15,17 @@ export default {
       online: {
         title: "Онлайн-приём",
         subtitle: "Рыба текст",
+        alt: "Онлайн-приём"
       },
       emergency: {
         title: "Экстренный случай",
         subtitle: "Рыба текст",
+        alt: "Экстренный случай"
       },
       cancer: {
         title: "Лечение рака",
         subtitle: "Рыба текст",
+        alt: "Лечение рака"
       }
     }
   }
