@@ -8,7 +8,10 @@ const Header = () => {
   return (
     <div className="header">
       <div className="logo">
-        <img src="logo.png" alt={i18next.t('Header.logoImgAlt')}/>
+        <img src="logo.png"
+          alt={i18next.t('Header.logoImgAlt')}
+          title={i18next.t('Header.logoImgAlt')}
+        />
       </div>
       <div className="assets">
         <h4>{i18next.t('Header.contactsBtn')}</h4>

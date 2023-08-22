@@ -9,7 +9,11 @@ const ServiceCard = (props) => {
   return (
     <div className="serviceCard">
       <div className="content">
-        <img src="icons/cancer.png" alt="test"/>
+        <img
+          src={`icons/${type}.png`}
+          alt={i18next.t(`ServiceCards.${type}.alt`)}
+          title={i18next.t(`ServiceCards.${type}.alt`)}
+        />
         <h3>{i18next.t(`ServiceCards.${type}.title`)}</h3>
         <hr />
         <h4>{i18next.t(`ServiceCards.${type}.subtitle`)}</h4>
