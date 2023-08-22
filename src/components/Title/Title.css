@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("../../assets/fonts/Montserrat-Bold.ttf");
+}
+
+.title {
+  width: 1046px;
+  margin: 80px auto;
+}
+
+.title h1 {
+  font-family: "Montserrat Bold", sans-serif;
+  font-size: 58px;
+  color: #252b42;
+  line-height: 80px;
+  margin: 0 0 35px 0;
+}
+
+.enterButton {
+  width: 128px;
+  height: 52px;
+  font-family: "Montserrat Bold", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ff685b;
+  cursor: pointer;
+}
+
+.contactsButton {
+  width: 155px;
+  height: 52px;
+  font-family: "Montserrat Bold", sans-serif;
+  font-size: 14px;
+  color: #ff685b;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid #ff685b;
+  cursor: pointer;
+}
