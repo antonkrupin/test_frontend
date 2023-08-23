@@ -1,0 +1,42 @@
+.filled {
+  /*width: 128px;*/
+  height: 52px;
+  font-family: "Montserrat Bold", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ff685b;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.outlined {
+  /*width: 155px;*/
+  height: 52px;
+  font-family: "Montserrat Bold", sans-serif;
+  font-size: 14px;
+  color: #ff685b;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid #ff685b;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.w128 {
+  width: 128px;
+}
+
+.w155 {
+  width: 155px;
+}
+
+.w228 {
+  width: 228px;
+}
+
+.w239 {
+  width: 239px;
+}
