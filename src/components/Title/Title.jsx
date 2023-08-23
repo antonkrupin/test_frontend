@@ -2,6 +2,8 @@ import React from "react";
 
 import i18next from "../../assets/i18next";
 
+import Button from "../Button/Button";
+
 import "./Title.css";
 
 const Title = () => {
@@ -11,8 +13,8 @@ const Title = () => {
         {i18next.t('Title.h1')}
       </h1>
       <div className="interactionButtons">
-        <button className="enterButton">{i18next.t('Title.enterBtn')}</button>
-        <button className="contactsButton">{i18next.t('Title.contactsBtn')}</button>
+        <Button styling="filled w128" text="Title.enterBtn" id="enterBtn"/>
+        <Button styling="outlined w155" text="Title.contactsBtn" id="contactsBtn"/>
       </div>
     </div>
   )
