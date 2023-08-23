@@ -49,11 +49,6 @@
   transition: 0.3s;
 }
 
-.assets button:hover {
-  background-color: #ff685b;
-  color: white;
-}
-
 @media (max-width: 575px) {
   .assets {
     margin-right: 10px;
