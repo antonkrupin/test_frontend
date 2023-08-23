@@ -27,6 +27,10 @@ export default {
         subtitle: "Рыба текст",
         alt: "Лечение рака"
       }
+    },
+    userAccountPage: {
+      exitBtn: "Выйти из аккаунта",
+      enterContactsBtn: "Перейти в контакты"
     }
   }
 }
