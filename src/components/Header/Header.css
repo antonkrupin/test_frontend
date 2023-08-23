@@ -10,7 +10,7 @@
 
 .header {
   display: flex;
-  width: 1440px;
+  max-width: 1440px;
   justify-content: space-between;
   align-items: center;
   margin: auto;
@@ -46,4 +46,63 @@
   border: 2px solid #ff685b;
   margin-left: 56px;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.assets button:hover {
+  background-color: #ff685b;
+  color: white;
+}
+
+@media (max-width: 575px) {
+  .assets {
+    margin-right: 10px;
+  }
+  
+  .assets button {
+    width: 106px;
+    height: 36px;
+    margin-left: 10px;
+  }
+
+  .logo {
+    margin-left: 10px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .assets {
+    margin-right: 40px;
+  }
+  
+  .assets button {
+    width: 106px;
+    height: 36px;
+    margin-left: 40px;
+  }
+
+  .logo {
+    margin-left: 40px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .assets {
+    margin-right: 70px;
+  }
+  
+  .assets button {
+    width: 106px;
+    height: 36px;
+    margin-left: 40px;
+  }
+
+  .logo {
+    margin-left: 70px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .header {
+    max-width: 100%;
+    margin: auto;
+    margin-top: 20px;
+  }
 }

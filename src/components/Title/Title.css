@@ -4,7 +4,7 @@
 }
 
 .title {
-  width: 1046px;
+  max-width: 1046px;
   margin: 96px auto;
 }
 
@@ -27,6 +27,7 @@
   border: none;
   background-color: #ff685b;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .contactsButton {
@@ -39,4 +40,45 @@
   border-radius: 5px;
   border: 2px solid #ff685b;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+@media (max-width: 575px) {
+  .title {
+    max-width: 355px;
+    margin: 30px auto;
+  }
+
+  .title h1 {
+    font-size: 28px;
+    line-height: 39px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .title {
+    max-width: 500px;
+    margin: 50px auto;
+  }
+
+  .title h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .title {
+    max-width: 650px;
+    margin: 60px auto;
+  }
+
+  .title h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .title {
+    max-width: 800px;
+    margin: 70px auto;
+  }
 }

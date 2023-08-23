@@ -1,6 +1,31 @@
 .serviceCards {
   display: flex;
   justify-content: space-between;
-  width: 1046px;
+  max-width: 1046px;
   margin: auto;
+}
+
+@media (max-width: 575px) {
+  .serviceCards {
+    flex-direction: column;
+    max-width: 328px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .serviceCards {
+    flex-direction: column;
+    max-width: 328px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .serviceCards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .serviceCards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

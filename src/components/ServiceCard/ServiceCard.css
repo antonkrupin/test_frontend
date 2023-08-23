@@ -40,3 +40,24 @@ hr {
   color: #737373;
   margin: 20px 0 0 0;
 }
+
+@media (max-width: 575px) {
+  .serviceCard {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .serviceCard {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .serviceCard {
+    margin: 20px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .serviceCard {
+    margin: 20px;
+  }
+}
