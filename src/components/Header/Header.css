@@ -30,9 +30,12 @@
   margin-right: 70px;
 }
 
-.assets h4 {
+#headerContacts {
+  font-family: "Montserrat SemiBold", sans-serif;
+  font-size: 15px;
   color: #737373;
   letter-spacing: 0.2px;
+  border: none;
 }
 
 .assets button {
@@ -40,11 +43,11 @@
   height: 40px;
   font-family: "Montserrat Medium", sans-serif;
   font-size: 20px;
+  margin-bottom: 20px;
   background-color: transparent;
   color: #ff685b;
   border-radius: 7px;
   border: 2px solid #ff685b;
-  margin-left: 56px;
   cursor: pointer;
   transition: 0.3s;
 }
