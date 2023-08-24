@@ -4,6 +4,7 @@ export default {
     Header: {
       contactsBtn: "Контакты",
       enterBtn: "Войти",
+      exitBtn: "Выйти",
       logoImgAlt: "Логотип"
     },
     Title: {
@@ -31,6 +32,11 @@ export default {
     userAccountPage: {
       exitBtn: "Выйти из аккаунта",
       enterContactsBtn: "Перейти в контакты"
+    },
+    validationErrors: {
+      passwordLength: "Пароль не менее 8 символов",
+      wrongPassword: "Пароль не верный",
+      userDosentExist: "Пользователь не существует",
     }
   }
 }
