@@ -6,13 +6,12 @@ import {
   Route,
 } from 'react-router-dom';
 
+import Header from './components/Header/Header';
 import Contacts from './routes/contacts';
 import StartPage from './routes/startPage';
 import UserAccount from './routes/userAccount';
 
 import routes from './routes/routes';
-
-import Header from './components/Header/Header';
 
 import './App.css';
 
