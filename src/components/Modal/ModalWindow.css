@@ -1,0 +1,94 @@
+.modal {
+  display: flex;
+  width: 30%;
+  height: 40%;
+  margin: 40px auto;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 13px 19px rgba(33, 37, 41, 0.4);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255,255,255, 0.9);
+}
+
+.modalForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.modalForm input {
+  width: 100%;
+  height: 40px;
+  border: 2px solid grey;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 45px;
+  right: 36%;
+  background-color: transparent;
+  border: none;
+  color: #e74040;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+}
+
+@media (max-width: 575px) {
+  .modal {
+    width: 70%;
+    height: 50%;
+  }
+
+  .closeButton {
+    right: 16%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .modal {
+    width: 40%;
+    height: 45%;
+  }
+
+  .closeButton {
+    right: 31%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .modal {
+    width: 40%;
+    height: 45%;
+  }
+
+  .closeButton {
+    right: 31%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .modal {
+    width: 40%;
+    height: 45%;
+  }
+
+  .closeButton {
+    right: 31%;
+  }
+}
