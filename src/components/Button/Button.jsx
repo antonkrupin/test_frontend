@@ -1,9 +1,9 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { useNavigate, useLocation } from 'react-router';
 import i18next from '../../assets/i18next';
 
-import { setModalOpen } from '../../slices/mainReducer';
+import { setModalOpen, setIsAuthorized } from '../../slices/mainReducer';
 
 import './Button.css'
 
@@ -13,22 +13,37 @@ const Button = (props) => {
   const dispatch = useDispatch();
 
   const { text, styling, id } = props;
-  const test = () => {
-    if (id === "enterBtn" && location.pathname === "/") {
-      /* if (location.pathname !== '/userAccount') {
-        navigate('/userAccount');
-      } else {
-        navigate('/');
-      } */
-      dispatch(setModalOpen());
-    } else {
-      navigate('/contacts')
+  const buttonHandler = () => {
+    const pathName = location.pathname;
+    switch(pathName) {
+      case '/': {
+        if (id === "enterBtn") {
+          dispatch(setModalOpen());
+        }
+        if (id === "contactsBtn") {
+          navigate('/contacts');
+        }
+        break;
+      }
+      case '/userAccount': {
+        if (id === "contactsBtn") {
+          navigate('/contacts');
+        }
+        if (id === "enterBtn") {
+          navigate('/');
+          dispatch(setIsAuthorized());
+        }
+        break;
+      }
+      default: {
+        break;
+      }
     }
   }
   return (
     <button
       className={styling}
-      onClick={test}
+      onClick={buttonHandler}
     >
         {i18next.t(`${text}`)}
     </button>
